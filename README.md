@@ -1,7 +1,7 @@
 # Para jogar é necessario ter a extensao python no vscode.
 # COMO JOGAR:
 
-  - Teclas:
+  -> Teclas:
   -   A -> Nota VERDE
   -   S -> Nota VERMELHA
   -   D -> Nota AMARELA
