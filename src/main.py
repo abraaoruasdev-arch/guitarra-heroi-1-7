@@ -1,3 +1,5 @@
+# Teste commit
+
 import var  # Variaveis globais  
 from menu import mostrar_menu_video, mostrar_score_video
 from hud import Contador, ContadorErros, desenhar_hud

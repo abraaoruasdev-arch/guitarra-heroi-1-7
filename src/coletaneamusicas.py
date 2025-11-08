@@ -28,6 +28,7 @@ class Musica(ABC): # HERANCA - Classe pai, MUSICA abstrata, FUNDO polimorfismo
     @abstractmethod
     def get_fundo(self):
         pass
+    
 
 
 # Musicas - Classes filhas
