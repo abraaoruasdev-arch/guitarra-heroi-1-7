@@ -37,7 +37,7 @@ class Californication(Musica):
         super().__init__(
             nome="Red Hot Chili Peppers - Californication",
             bpm=96,
-            duracao=330,
+            duracao=320,
             chance_acorde=0.01,
             chance_contratempo=0.75,
             arquivo="assets/musicas/californication.mp3",
@@ -54,7 +54,7 @@ class AmericanIdiot(Musica):
         super().__init__(
             nome="Green Day - American Idiot",
             bpm=93,
-            duracao=var.duracaoMusicas,
+            duracao=173,
             chance_acorde=0.1,
             chance_contratempo=0.9,
             arquivo="assets/musicas/american_idiot.mp3",
@@ -64,15 +64,14 @@ class AmericanIdiot(Musica):
         return f"{self.nome} ({self.bpm} BPM, {self.duracao}s)"
     
     def get_fundo(self):
-        return "assets/fundos/americanidiot.png"
-    
+        return "assets/fundos/americanidiot.png"  
 
 class Dumb(Musica):
     def __init__(self):
         super().__init__(
             nome="Nirvana - Dumb",
             bpm=114,
-            duracao=var.duracaoMusicas,
+            duracao=151,
             chance_acorde=0,
             chance_contratempo=0.65,
             arquivo="assets/musicas/dumb.mp3",
@@ -89,7 +88,7 @@ class FeelGood(Musica):
         super().__init__(
             nome="Gorillaz - Feel Good Inc",
             bpm=139,
-            duracao=var.duracaoMusicas,
+            duracao=223,
             chance_acorde=0,
             chance_contratempo=0.50,
             arquivo="assets/musicas/feel_good.mp3",
@@ -106,7 +105,7 @@ class TheEmptinessMachine(Musica):
         super().__init__(
             nome="Linkin Park - The Emptiness Machine",
             bpm=92.25,
-            duracao=var.duracaoMusicas,
+            duracao=192,
             chance_acorde=0.15,
             chance_contratempo=0.7,
             arquivo="assets/musicas/the_emptiness_machine.mp3",
@@ -123,7 +122,7 @@ class HeartShapedBox(Musica):
         super().__init__(
             nome="Nirvana - Heart-Shaped Box",
             bpm=101,
-            duracao=var.duracaoMusicas,
+            duracao=281,
             chance_acorde=0.1,
             chance_contratempo=0.8,
             arquivo="assets/musicas/heart_shaped_box.mp3",
@@ -140,7 +139,7 @@ class BackInBlack(Musica):
         super().__init__(
             nome="AC DC - Back In Black",
             bpm=94.5,
-            duracao=var.duracaoMusicas,
+            duracao=245,
             chance_acorde=0.1,
             chance_contratempo=0.4,
             arquivo="assets/musicas/back_in_black.mp3",
@@ -157,7 +156,7 @@ class TNT(Musica):
         super().__init__(
             nome="AC DC - T.N.T",
             bpm=126,
-            duracao=var.duracaoMusicas,
+            duracao=215,
             chance_acorde=0.5,
             chance_contratempo=0.02,
             arquivo="assets/musicas/tnt.mp3",
