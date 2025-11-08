@@ -1,5 +1,3 @@
-# Teste commit
-
 import var  # Variaveis globais  
 from menu import mostrar_menu_video, mostrar_score_video
 from hud import Contador, ContadorErros, desenhar_hud
@@ -58,7 +56,6 @@ def processarEventos(notas, contador):
             # Ativa efeito branco ao pressionar a tecla
             if event.key in lane_effects:
                 lane_effects[event.key]["active"] = True
-                lane_effects[event.key]["color"] = (255, 255, 255)
                 lane_effects[event.key]["timer"] = var.EFFECT_DURATION
             # Verifica acerto de nota
             for nota in notas:
@@ -181,7 +178,7 @@ tempo_batida = 60 / musica_escolhida.bpm
 meia_batida = tempo_batida / 2
 
 # Define duração da fase e inicializa tempos
-duracao_fase = var.duracaoMusicas
+duracao_fase = musica_escolhida.duracao
 var.fallSpeed = fall_speed
 intervalo_base = intervalo_spawn
 inicio_fase = time.time()
@@ -207,7 +204,7 @@ while running:
         musica_escolhida, dificuldade, fall_speed, intervalo_spawn = mostrar_menu_video(screen, video_menu)
         tempo_batida = 60 / musica_escolhida.bpm
         meia_batida = tempo_batida / 2
-        duracao_fase = var.duracaoMusicas
+        duracao_fase = musica_escolhida.duracao
         var.fallSpeed = fall_speed
         intervalo_base = intervalo_spawn
         notas = []
@@ -264,7 +261,7 @@ while running:
             musica_escolhida, dificuldade, fall_speed, intervalo_spawn = mostrar_menu_video(screen, video_menu)
             tempo_batida = 60 / musica_escolhida.bpm
             meia_batida = tempo_batida / 2
-            duracao_fase = var.duracaoMusicas
+            duracao_fase = musica_escolhida.duracao
             var.fallSpeed = fall_speed
             intervalo_base = intervalo_spawn
             notas = []

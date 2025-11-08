@@ -37,7 +37,7 @@ class Californication(Musica):
         super().__init__(
             nome="Red Hot Chili Peppers - Californication",
             bpm=96,
-            duracao=var.duracaoMusicas,
+            duracao=330,
             chance_acorde=0.01,
             chance_contratempo=0.75,
             arquivo="assets/musicas/californication.mp3",
