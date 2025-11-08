@@ -1,8 +1,7 @@
-import var
 import pygame
 from abc import ABC, abstractmethod
 
-class Musica(ABC): # HERANCA - Classe pai, MUSICA abstrata, FUNDO polimorfismo
+class Musica(ABC): # HERANCA; ABSTRACAO; POLIMORFISMO.
     def __init__(self, nome, bpm, duracao, chance_acorde, chance_contratempo, arquivo=None, arquivo_fundo=None, video_fundo=None):
         self.nome = nome
         self.bpm = bpm
